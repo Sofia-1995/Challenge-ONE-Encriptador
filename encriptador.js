@@ -1,5 +1,6 @@
 var botonEncriptar = document.querySelector("#button-encriptar");
 var botonDesencriptar = document.querySelector("#button-desencriptar");
+var botonCopiar = document.querySelector("#button-copy");
 
 function pintarResultado(dato) {
   var resultadoPlaceholder = document.querySelector("#resultado-placeholder");
@@ -58,5 +59,13 @@ function desencriptar() {
   pintarResultado(resultado);
 }
 
+function copiarResultado() {
+  var parrafoResultado = document.querySelector("#resultado");
+  if (navigator && navigator.clipboard) {
+    navigator.clipboard.writeText(parrafoResultado.innerHTML);
+  }
+}
+
 botonEncriptar.addEventListener("click", encriptar);
 botonDesencriptar.addEventListener("click", desencriptar);
+botonCopiar.addEventListener("click", copiarResultado);
