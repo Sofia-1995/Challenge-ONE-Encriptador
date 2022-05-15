@@ -146,6 +146,44 @@ body {
   margin: 0;
 }
 
+.resultado-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.resultado-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #495057;
+}
+
+.button-copy {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  padding: 24px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button-copy:hover {
+  background-color: #dde4ee;
+}
+
+.button-copy:active {
+  background-color: #b8c1cd;
+}
+
+.hidden {
+  display: none;
+}
+
 .footer {
   position: absolute;
   left: 16px;

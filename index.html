@@ -23,6 +23,7 @@
           class="text-input"
           type="text"
           placeholder="Ingrese el texto aqui"
+          id="text-input"
         ></textarea>
         <div>
           <div class="text-wrapper">
@@ -30,19 +31,30 @@
             <p class="warning-text">Solo letras minúsculas y sin acentos</p>
           </div>
           <div class="button-container">
-            <button class="button-blue" type="button">Encriptar</button>
-            <button class="button-grey" type="button">Desencriptar</button>
+            <button id="button-encriptar" class="button-blue" type="button">
+              Encriptar
+            </button>
+            <button id="button-desencriptar" class="button-grey" type="button">
+              Desencriptar
+            </button>
           </div>
         </div>
       </div>
       <div class="content-right">
-        <img src="./imagenes/placeholder.svg" alt="" />
-        <h4 class="placeholder-title">Ningún mensaje fue encontrado</h4>
-        <p class="placeholder-description">
-          Ingresa el texto que desees encriptar o desencriptar.
-        </p>
+        <div id="resultado-placeholder">
+          <img src="./imagenes/placeholder.svg" alt="" />
+          <h4 class="placeholder-title">Ningún mensaje fue encontrado</h4>
+          <p class="placeholder-description">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div id="resultado-container" class="resultado-container hidden">
+          <p id="resultado" class="resultado-text"></p>
+          <button class="button-copy">Copiar</button>
+        </div>
       </div>
     </main>
     <footer class="footer">Desarrollado por <b>Sofia Magali Pereyra</b></footer>
+    <script src="./encriptador.js"></script>
   </body>
 </html>
