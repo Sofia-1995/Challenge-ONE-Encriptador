@@ -14,10 +14,10 @@
     />
   </head>
   <body>
-    <header class="header">
-      <img src="./imagenes/logo.svg" />
-    </header>
     <main class="main-page">
+      <header class="header">
+        <img src="./imagenes/logo.svg" />
+      </header>
       <div class="content-left">
         <textarea
           class="text-input"
@@ -42,7 +42,11 @@
       </div>
       <div class="content-right">
         <div id="resultado-placeholder">
-          <img src="./imagenes/placeholder.svg" alt="" />
+          <img
+            class="img-placeholder"
+            src="./imagenes/placeholder.svg"
+            alt=""
+          />
           <h4 class="placeholder-title">Ningún mensaje fue encontrado</h4>
           <p class="placeholder-description">
             Ingresa el texto que desees encriptar o desencriptar.
@@ -53,8 +57,10 @@
           <button id="button-copy" class="button-copy">Copiar</button>
         </div>
       </div>
+      <footer class="footer">
+        Desarrollado por <b>Sofia Magali Pereyra</b>
+      </footer>
     </main>
-    <footer class="footer">Desarrollado por <b>Sofia Magali Pereyra</b></footer>
     <script src="./encriptador.js"></script>
   </body>
 </html>
